@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+// nav,main,footer{
+//     display: none;
+// }
+
+.d-flex {
+    display: flex;
+}
+
+.black-color {
+    background-color: #1c1e21;
+}
+
+li {
+    cursor: pointer;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+p{
+    line-height:26px;
+}
+nav {
+    background-color: #128c7e;
+    color: white;
+    position: sticky;
+    top: 0;
+    @media only screen and (max-width: 1020px) {
+        position: initial;
+    }
+}
+#nav-items {
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+.nav-screen1 {
+    padding: 22px 0;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    width: calc(100vw - 470px);
+    ul {
+        align-self: center;
+    }
+    @media only screen and (max-width: 1350px) {
+        width: calc(100vw - 80px);
+    }
+    @media only screen and (max-width: 1020px) {
+        display: none;
+    }
+}
+
+.nav-screen2 {
+    display: none;
+    @media only screen and (max-width: 1020px) {
+        display: flex;
+    }
+    #icons {
+        justify-content: space-between;
+        margin: 10%;
+    }
+    #navbar2 {
+        width: 70px;
+        margin: auto;
+        padding: 30px 0;
+        img {
+            width: 100%;
+        }
+    }
+}
+#bars {
+    text-align: end;
+    display: none;
+    padding: 10px;
+    @media only screen and (max-width: 1020px) {
+        display: block;
+    }
+}
+#nav-bars {
+    display: none;
+        #nav-items-2 {
+            background-color: #075e54;
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            select {
+                background-color: #075e54;
+                border: 3px solid white;
+                border-radius: 5px;
+                color: white;
+                height: 35px;
+                margin: 40px;
+                padding-left: 10px;
+            }
+            ul > li {
+                border-bottom: 1px solid #128c7e;
+                margin-right: 50px;
+            }
+        }
+    }
+// -----------------------------------main----------------------------------------
+#lectern-phone {
+    width: 50vw;
+    margin: 3% auto;
+    @media only screen and (max-width: 1350px) {
+        width: 76vw;
+    }
+    @media only screen and (max-width: 1020px) {
+        display: none;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 43px;
+        font-weight: 200;
+    }
+    #lectern {
+        align-self: center;
+        #lectern-inf {
+            width: 80%;
+            margin: auto;
+            font-size: 20px;
+        }
+    }
+    #phone-img {
+        width: 70vw;
+        img {
+            margin: auto;
+            width: 100%;
+            object-fit: cover;
+            @media only screen and (max-width: 1020px) {
+                width: 50%;
+            }
+        }
+    }
+    #link {
+        flex-direction: column;
+        a {
+            color: #1cb393;
+            margin: 10px 0;
+            svg {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+#lectern-phone-smoll {
+    background-color: #128c7e;
+    display: none;
+    text-align: center;
+    color: white;
+    h2{
+        font-size: 24px;
+        line-height: 31px;
+        padding-bottom: 15px;
+        font-weight: 400;
+    }
+    div {
+        width: 80%;
+        margin: auto;
+    }
+    img {
+        width: 80%;
+        margin-bottom: -50%;
+    }
+    @media only screen and (max-width: 1020px) {
+        display: block;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+#business-and-security {
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 3%;
+    justify-content: space-between;
+    @media only screen and (max-width: 1350px) {
+        width: 100vw;
+    }
+    @media only screen and (max-width: 1020px) {
+        flex-direction: column;
+    }
+
+    #whatsapp-business,
+    #whatsapp-security {
+        text-align: center;
+        padding: 65px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 50%;
+        font-size: 18px;
+        @media only screen and (max-width: 1020px) {
+            width: 100%;
+        }
+        h2 {
+            font-size: 34px;
+            line-height: 44px;
+        }
+        a{
+            color: #39b3ed;
+        }
+    }
+
+    #whatsapp-business {
+        background-color: #d8e8ea;
+        margin-right: 17px;
+        @media only screen and (max-width: 1020px) {
+            margin-right: 0;
+        }
+        img {
+            width: 68%;
+            margin: auto;
+            margin-bottom: -5px;
+            margin-top: 100px;
+        }
+    }
+    #whatsapp-security {
+        background-color: #e7f0e4;
+        margin-left: 17px;
+        padding-bottom: 50px;
+        @media only screen and (max-width: 1020px) {
+            margin-left: 0;
+        }
+        #circle {
+            width: 95%;
+            margin: auto;
+            background-color: #77d7c8;
+            border-radius: 50%;
+            width: 330px;
+            height: 330px;
+            @media only screen and (max-width: 1020px) {
+                width: 230px;
+                height: 230px;
+            }
+        }
+    }
+}
+#button-function {
+    margin: 50px auto;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid #77d7c8;
+    border-radius: 50px;
+    width: 330px;
+    height: 55px;
+    a {
+        color: #128c7e;
+        font-size: 17px;
+        align-self: center;
+    }
+}
+
+// -----------------footer-------------------
+footer {
+    background-color: #273443;
+    color: white;
+}
+
+.footer-hed,
+.footer-floare {
+    margin: auto;
+    width: calc(100vw - 470px);
+    @media only screen and (max-width: 1350px) {
+        width: calc(100vw - 80px);
+    }
+}
+.footer-hed {
+    padding: 25px 0;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    ul {
+        padding-left: 0;
+        font-weight: 600;
+        line-height: 60px;
+        li {
+            line-height: 28px;
+        }
+    }
+}
+
+.footer-floare {
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+    a,
+    p {
+        align-self: center;
+    }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+

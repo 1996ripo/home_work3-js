@@ -1,21 +1,21 @@
 const nav = document.getElementById('nav');
-const navBars =document.getElementById('nav-bars')
+const navBars = document.getElementById('nav-bars')
 const footer = document.getElementById('footer');
 
 nav.innerHTML =
-`<div class="d-flex nav-screen1">
+    `<div class="d-flex nav-screen1">
         <div id="navbar">
             <img src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg" alt="">
         </div>
     <ul class="d-flex" id="nav-items">
-        <li>WHATSAPP WEB</li>
-        <li>ФУНКЦИИ</li>
-         <li>ЗАГРУЗИТЬ</li>
-        <li>БЕЗОПАСНОСТЬ</li>
-        <li>СПРАВОЧНЫЙ ЦЕНТР</li>
-        <li><i class="fa fa-globe"></i>
+        <li><a href="#">WHATSAPP WEB</a></li>
+        <li><a href="#">ФУНКЦИИ</a></li>
+         <li><a href="#">ЗАГРУЗИТЬ</a></li>
+        <li><a href="#">БЕЗОПАСНОСТЬ</a></li>
+        <li><a href="#">СПРАВОЧНЫЙ ЦЕНТР</a></li>
+        <li><a href="#"><i class="fa fa-globe"></i>
             <span>RU</span>
-            <i class="fa fa-sort-down"></i>
+            <i class="fa fa-sort-down"></i></a>
         </li>
     </ul>
 </div>
@@ -30,10 +30,10 @@ nav.innerHTML =
 
 
 navBars.innerHTML =
-` <div id="nav-items-2">
+    ` <div id="nav-items-2">
 <div class="d-flex" id="icons">
     <i class="fa fa-2x fa-whatsapp"></i>
-    <i class="fa fa-2x fa-times"></i>
+    <i id="close"class="fa fa-2x fa-times"></i>
 </div>
 <ul>
     <li>
@@ -52,7 +52,7 @@ navBars.innerHTML =
         <h4><a href="#">Контакты</a></h4>
     </li>
 </ul>
-<div>
+
     <select>
         <option value="https://www.whatsapp.com/?lang=az">azərbaycan</option>
         <option value="https://www.whatsapp.com/?lang=af">Afrikaans</option>
@@ -115,11 +115,31 @@ navBars.innerHTML =
         <option value="https://www.whatsapp.com/?lang=ja">日本語</option>
         <option value="https://www.whatsapp.com/?lang=ko">한국어</option>
     </select>
-</div>
+
 </div>`;
 
-footer.innerHTML=
-` <div>
+
+const barsIcon = document.getElementById('bars').firstChild;
+const main =document.getElementById('main');
+const xIcon = document.getElementById('close');
+const minNave = [barsIcon,xIcon];
+
+minNave.forEach(element => {
+    console.log(element);
+    element.addEventListener('click', e =>{
+        navBars.classList.toggle("d-none");
+        navBars.classList.toggle("d-block");
+        nav.classList.toggle("d-none");
+        main.classList.toggle("d-none");
+        footer.classList.toggle("d-none");
+    });
+});
+
+
+
+// ------------------------------------------------------
+footer.innerHTML =
+    ` <div>
 <div class="d-flex footer-hed">
     <ul>
         WHATSAPP

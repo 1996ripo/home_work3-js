@@ -4,9 +4,13 @@
     box-sizing: border-box;
     font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-// nav,main,footer{
-//     display: none;
-// }
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
 
 .d-flex {
     display: flex;
@@ -27,9 +31,10 @@ a {
         text-decoration: underline;
     }
 }
-p{
-    line-height:26px;
+p {
+    line-height: 26px;
 }
+
 nav {
     background-color: #128c7e;
     color: white;
@@ -88,27 +93,38 @@ nav {
     }
 }
 #nav-bars {
-    display: none;
-        #nav-items-2 {
+    #nav-items-2 {
+        background-color: #075e54;
+        width: 100vw;
+        #icons {
+            justify-content: space-between;
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+        }
+        select {
             background-color: #075e54;
-            width: 100vw;
-            height: 100vh;
-            display: block;
-            select {
-                background-color: #075e54;
-                border: 3px solid white;
-                border-radius: 5px;
-                color: white;
-                height: 35px;
-                margin: 40px;
-                padding-left: 10px;
-            }
-            ul > li {
+            border: 3px solid white;
+            border-radius: 5px;
+            color: white;
+            height: 35px;
+            margin:40px;
+            padding-left: 10px;
+        }
+        ul {
+            width: 80%;
+            margin: auto;
+            li {
                 border-bottom: 1px solid #128c7e;
-                margin-right: 50px;
+                font-size: 16px;
+                line-height: 26px;
+                h4 {
+                    padding: 15px;
+                }
             }
         }
     }
+}
 // -----------------------------------main----------------------------------------
 #lectern-phone {
     width: 50vw;
@@ -159,7 +175,7 @@ nav {
     display: none;
     text-align: center;
     color: white;
-    h2{
+    h2 {
         font-size: 24px;
         line-height: 31px;
         padding-bottom: 15px;
@@ -209,7 +225,7 @@ nav {
             font-size: 34px;
             line-height: 44px;
         }
-        a{
+        a {
             color: #39b3ed;
         }
     }
@@ -305,4 +321,3 @@ footer {
         font-size: 18px;
     }
 }
-

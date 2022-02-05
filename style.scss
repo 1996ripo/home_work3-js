@@ -145,13 +145,13 @@ nav {
         #lectern-inf {
             width: 90%;
             font-size: 20px;
-            h2{
+            h2 {
                 margin: 30px 0px;
             }
-            P{
+            P {
                 font-size: 18px;
                 line-height: 26px;
-                margin-bottom: 15PX;
+                margin-bottom: 15px;
             }
         }
     }
@@ -268,7 +268,7 @@ nav {
                 width: 230px;
                 height: 230px;
             }
-            i{
+            i {
                 z-index: 1;
             }
         }
@@ -450,10 +450,43 @@ footer {
 }
 
 // -------------------download page-------------
-#main-download-page {
+#download-page {
+    #nav {
+        @media only screen and (max-width: 770px) {
+            display: none;
+        }
+    }
+}
+.nav-bars-dowenload {
+    display: none;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    div {
+        align-items: center;
+    }
+    img {
+        margin-right: 15px;
+    }
+    @media only screen and (max-width: 770px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.main-download-page {
     width: 95%;
     margin: auto;
     justify-content: space-between;
+    @media only screen and (max-width: 770px) {
+        width: 100%;
+    }
+
+    #main-inf {
+        @media only screen and (max-width: 770px) {
+            flex-direction: column;
+        }
+    }
     h2 {
         text-align: center;
         font-size: 28px;
@@ -493,6 +526,9 @@ footer {
         width: 49%;
         padding-top: 100px;
         padding-bottom: 90px;
+        @media only screen and (max-width: 770px) {
+            width: 100%;
+        }
     }
 
     #tel {
@@ -510,9 +546,16 @@ footer {
 
         #android-iphone {
             justify-content: space-around;
+            @media only screen and (max-width: 770px) {
+                flex-direction: column;
+            }
             img {
                 width: 90%;
                 margin: auto;
+                object-fit: cover;
+                @media only screen and (max-width: 770px) {
+                    width: 50%;
+                }
             }
             #android,
             #iphone {
@@ -527,16 +570,17 @@ footer {
     }
     #pc-and-mac {
         background-color: #fcf2c6;
+
         p {
             margin-top: 15px;
         }
         a {
-            margin: 12px auto ;
+            margin: 12px auto;
         }
 
         img {
             width: 20%;
-            margin: 25px auto 40px ;
+            margin: 25px auto 40px;
         }
         #for-download {
             flex-direction: column;

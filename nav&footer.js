@@ -120,19 +120,26 @@ navBars.innerHTML =
 
 
 const barsIcon = document.getElementById('bars').firstChild;
-const main =document.getElementById('main');
+const main = document.getElementById('main');
 const xIcon = document.getElementById('close');
-const minNave = [barsIcon,xIcon];
+const dowenloadBars = document.getElementById('dowenload-bars');
+const minNave = [barsIcon,bars2, xIcon];
 
 minNave.forEach(element => {
-    element.addEventListener('click', e =>{
+    element.addEventListener('click', e => {
         navBars.classList.toggle("d-none");
         navBars.classList.toggle("d-block");
         nav.classList.toggle("d-none");
         main.classList.toggle("d-none");
         footer.classList.toggle("d-none");
+        
+        navBars.classList.toggle("d-block");
+        dowenloadBars.classList.toggle("d-none");
+
     });
 });
+
+
 
 
 

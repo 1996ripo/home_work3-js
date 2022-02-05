@@ -5,12 +5,12 @@ const footer = document.getElementById('footer');
 nav.innerHTML =
     `<div class="d-flex nav-screen1">
         <div id="navbar">
-            <img src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg" alt="">
+            <a href="index.html"><img src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg" alt=""></a>
         </div>
     <ul class="d-flex" id="nav-items">
-        <li><a href="#">WHATSAPP WEB</a></li>
+        <li><a href="WhatsAppWeb.html">WHATSAPP WEB</a></li>
         <li><a href="#">ФУНКЦИИ</a></li>
-         <li><a href="#">ЗАГРУЗИТЬ</a></li>
+         <li><a href="download-page.html">ЗАГРУЗИТЬ</a></li>
         <li><a href="#">БЕЗОПАСНОСТЬ</a></li>
         <li><a href="#">СПРАВОЧНЫЙ ЦЕНТР</a></li>
         <li><a href="#"><i class="fa fa-globe"></i>
@@ -125,7 +125,6 @@ const xIcon = document.getElementById('close');
 const minNave = [barsIcon,xIcon];
 
 minNave.forEach(element => {
-    console.log(element);
     element.addEventListener('click', e =>{
         navBars.classList.toggle("d-none");
         navBars.classList.toggle("d-block");

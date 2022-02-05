@@ -108,7 +108,7 @@ nav {
             border-radius: 5px;
             color: white;
             height: 35px;
-            margin:40px;
+            margin: 40px;
             padding-left: 10px;
         }
         ul {
@@ -143,9 +143,16 @@ nav {
     #lectern {
         align-self: center;
         #lectern-inf {
-            width: 80%;
-            margin: auto;
+            width: 90%;
             font-size: 20px;
+            h2{
+                margin: 30px 0px;
+            }
+            P{
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 15PX;
+            }
         }
     }
     #phone-img {
@@ -261,6 +268,9 @@ nav {
                 width: 230px;
                 height: 230px;
             }
+            i{
+                z-index: 1;
+            }
         }
     }
 }
@@ -319,5 +329,228 @@ footer {
     p {
         font-weight: 400;
         font-size: 18px;
+    }
+}
+// ----------------------page 2-----------------
+#body {
+    background-color: #d9dcdc;
+}
+#wats-app {
+    background-color: #00a884;
+    height: 225px;
+    color: white;
+    padding-top: 25px;
+    div {
+        width: calc(100vw - 470px);
+        margin: auto;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 12px;
+        align-self: center;
+        justify-content: flex-start;
+        @media only screen and (max-width: 1350px) {
+            width: calc(100vw - 80px);
+        }
+    }
+}
+
+#use-whats-app {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 60%;
+    top: 90px;
+    left: 20%;
+    right: 20%;
+    @media only screen and (max-width: 1350px) {
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+    @media only screen and (max-width: 1050px) {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: normal;
+        margin-bottom: 60px;
+        line-height: normal;
+        color: #41525d;
+    }
+    #text-untitled {
+        margin: 80px auto;
+        @media only screen and (max-width: 770px) {
+            flex-direction: column;
+        }
+        a {
+            color: #008069;
+            text-decoration: none;
+        }
+
+        #text {
+            align-self: center;
+            width: 100%;
+            ul {
+                margin-bottom: 60px;
+            }
+        }
+        #untitled {
+            text-align: center;
+            img {
+                width: 100%;
+                @media only screen and (max-width: 770px) {
+                    width: 50%;
+                    margin-top: 20px;
+                }
+            }
+            #sing-in-inf {
+                text-align: start;
+                background-color: #009de2;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 6px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                margin-top: 5px;
+                font-size: 12px;
+                margin-left: 50px;
+                width: 80%;
+            }
+        }
+        li {
+            list-style-type: decimal;
+            margin: 25px;
+            color: #41525d;
+            font-size: 18px;
+        }
+    }
+
+    #video-rol {
+        position: relative;
+        width: 100%;
+        background-color: #f9f9fa;
+        i {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            right: 45%;
+            opacity: 0.6;
+            cursor: pointer;
+        }
+        img,
+        video {
+            width: 65%;
+            margin: 70px auto;
+        }
+    }
+}
+
+// -------------------download page-------------
+#main-download-page {
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        line-height: calc(1.5 * 28px);
+        padding-bottom: 50px;
+    }
+    button {
+        background-color: #128c7e;
+        cursor: pointer;
+        color: white;
+        border-radius: 25px;
+        border: 1px solid #128c7e;
+        font-size: 16px;
+        padding: 15px;
+        box-shadow: rgba(69, 69, 75, 0.2) 0px 7px 29px 0px;
+        margin: auto;
+    }
+    a {
+        color: #39b3ed;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    p {
+        width: 80%;
+        color: #5e5e5e;
+        margin: auto;
+        text-align: center;
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    #tel,
+    #pc-and-mac {
+        width: 49%;
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+
+    #tel {
+        background-color: #e7f0e4;
+
+        h3 {
+            text-align: center;
+            margin: auto;
+            width: 70%;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 300;
+            margin-bottom: 25px;
+        }
+
+        #android-iphone {
+            justify-content: space-around;
+            img {
+                width: 90%;
+                margin: auto;
+            }
+            #android,
+            #iphone {
+                flex-direction: column;
+            }
+            button {
+                width: 110px;
+                margin-top: 25px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+    #pc-and-mac {
+        background-color: #fcf2c6;
+        p {
+            margin-top: 15px;
+        }
+        a {
+            margin: 12px auto ;
+        }
+
+        img {
+            width: 20%;
+            margin: 25px auto 40px ;
+        }
+        #for-download {
+            flex-direction: column;
+            button {
+                width: 250px;
+                margin-top: 75px;
+            }
+        }
+
+        #pk {
+            img {
+                width: 58%;
+                margin: auto;
+            }
+        }
     }
 }
